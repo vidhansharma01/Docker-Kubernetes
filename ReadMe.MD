@@ -1,16 +1,20 @@
-//To show the process pull by docker
-docker ps -a
+**To show the process pull by docker**
 
-//to give interactive node console
-docker run -it node
+### docker ps -a
 
-//to build docker file
-docker build .
+**to give interactive node console**
 
-//stop docker container
-docker stop containerName
+### docker run -it node
 
-//run an image 
+**to build docker file**
+
+### docker build .
+
+**stop docker container**
+
+### docker stop containerName
+
+**run an image **
 docker run -p 3000:80 imageSHA
 
 //restart a container
