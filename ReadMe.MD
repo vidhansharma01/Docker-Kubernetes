@@ -1,74 +1,92 @@
 **To show the process pull by docker**
 
-### docker ps -a
+:whale: docker ps -a
 
 **to give interactive node console**
 
-### docker run -it node
+:whale: docker run -it node
 
 **to build docker file**
 
-### docker build .
+:whale: docker build .
 
 **stop docker container**
 
-### docker stop containerName
+:whale: docker stop containerName
 
 **run an image **
-docker run -p 3000:80 imageSHA
 
-//restart a container
-docker start containerName
+:whale: docker run -p 3000:80 imageSHA
 
-//currently running container
-docker ps
+**restart a container**
 
-//interactive console in docker
-docker run -it imageSHA
+:whale: docker start containerName
 
-//removing docker container
-docker rm containerName
+**currently running container**
 
-//docker images on hard drive
-docker images
+:whale: docker ps
 
-//remove images
-docker rmi imageSHA
+**interactive console in docker**
 
-//inspecting docker images
-docker image inspect imgSHA
+:whale: docker run -it imageSHA
 
-//coping files into & from container
-docker cp FileName/FolderName elastic_merkle:/ts
+**removing docker container**
 
-//naming docker image
-docker build -t name:tag .
+:whale: docker rm containerName
 
-//pushing to docker hub
-docker push imageTAG
+**docker images on hard drive**
 
-//pulling image file from docker hub
-docker pull node
+:whale: docker images
 
-//to get the volume stored locally
-docker volume ls
+**remove images**
 
-//Volume command in docker
-docker run -d --rm -p 3000:80 --name feed-app -v feedback:/app/feedback
+:whale: docker rmi imageSHA
+
+**inspecting docker images**
+
+:whale: docker image inspect imgSHA
+
+**coping files into & from container**
+
+:whale: docker cp FileName/FolderName elastic_merkle:/ts
+
+**naming docker image**
+
+:whale: docker build -t name:tag .
+
+**pushing to docker hub**
+
+:whale: docker push imageTAG
+
+**pulling image file from docker hub**
+
+:whale: docker pull node
+
+**to get the volume stored locally**
+
+:whale: docker volume ls
+
+**Volume command in docker**
+
+:whale: docker run -d --rm -p 3000:80 --name feed-app -v feedback:/app/feedback
  -v "/users/../folderName" -v /app/node_modules feed:volumes
 
-//For container communicating with localhost
-host.docker.internal
+**For container communicating with localhost**
 
-//To get details of container
-docker container inspect containerName
+:whale: host.docker.internal
 
-//Network 
-docker network create networkName
+**To get details of container**
 
-//connecting a container to a network
-docker run -d --name mongodb --network favorites-network mongo
+:whale: docker container inspect containerName
 
-//starting docker-compose
-docker-compose up -d
-docker-compose down
+**Network**
+
+:whale: docker network create networkName
+
+**connecting a container to a network**
+
+:whale: docker run -d --name mongodb --network favorites-network mongo
+
+**starting docker-compose**
+:whale: docker-compose up -d
+:whale: docker-compose down
