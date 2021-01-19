@@ -14,7 +14,7 @@
 
 :whale: docker stop containerName
 
-**run an image **
+**run an image**
 
 :whale: docker run -p 3000:80 imageSHA
 
@@ -88,5 +88,7 @@
 :whale: docker run -d --name mongodb --network favorites-network mongo
 
 **starting docker-compose**
+
 :whale: docker-compose up -d
+
 :whale: docker-compose down
