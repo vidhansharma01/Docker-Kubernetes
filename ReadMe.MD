@@ -1,3 +1,5 @@
+# Docker commands
+
 **To show the process pull by docker**
 
 :whale: docker ps -a
@@ -87,8 +89,76 @@
 
 :whale: docker run -d --name mongodb --network favorites-network mongo
 
+## Docker compose:-
+
 **starting docker-compose**
 
 :whale: docker-compose up -d
 
 :whale: docker-compose down
+
+# Kubernetes command
+
+**to start a kubernetes cluster using docker driver**
+
+:feet: minikube start --driver=docker
+
+**To get deployment object**
+
+:feet: kubectl get deployments
+
+**To get pods object**
+
+:feet: kubectl get pods
+
+**delete deployment object**
+
+:feet: kubectl delete deployment deploymentObjName
+
+**To create deployment object**
+
+:feet: kubectl create deployment first-app --image=vidhansharma/kub-first-app:latest
+
+**To get the dashboard on browser**
+
+:feet: minikube dashboard
+
+**To get services**
+
+:feet: kubectl get services
+
+**Expose a pod**
+
+:feet: kubectl expose deployment first-app --type=LoadBalancer --port=8080
+
+**To get the port address**
+
+:feet: minikube service first-app
+
+**Scaling pods**
+
+:feet: kubectl scale deployment/first-app --replicas=3
+
+**update deployment**
+
+:feet: kubectl set image deployment/first-app kub-first-app=vidhansharma/kub-first-app
+
+**starting pods in declarative approach**
+
+:feet: kubectl apply -f=deployment.yaml/service.yaml
+
+**starting services in declarative approach**
+
+:feet: kubectl apply -f service.yaml
+
+**Deleting the pods & services in Yaml**
+
+:feet: kubectl delete -f=deployment.yaml -f=service.yaml
+
+**get persistent volume**
+
+:feet: kubectl get pv
+
+**get pv claim**
+
+:feet: kubectl get pvc
